@@ -93,19 +93,87 @@ bash
 hospital_system.exe
 Note: Use PowerShell or Windows Terminal for best display. Command Prompt may not show box characters correctly.
 
-##How the Application Works
-The application starts and automatically loads saved data from files
+## How the Application Works
 
-User selects an operation from the main menu
+1. The application starts and automatically loads saved data from files
+2. User selects an operation from the main menu
+3. All operations are performed on in-memory vectors
+4. Patient records support both Inpatient (bed + ward) and Outpatient types
+5. Appointments are linked to patients and doctors
+6. Before exiting, all data is automatically saved to files
+7. During the next launch, all previous data is restored
 
-All operations are performed on in-memory vectors
+---
 
-Patient records support both Inpatient (bed + ward) and Outpatient types
+## Patient Types & Billing
 
-Appointments are linked to patients and doctors
+### Inpatient
+- Requires ward number and bed number
+- Charges: ₹2000 per day (room) + ₹500 per day (doctor fee)
+- GST (18%) applied
+- Senior citizens (age 60+) get 10% discount
 
-Before exiting, all data is automatically saved to files
+### Outpatient
+- Consultation only, no bed required
+- Flat fee: ₹500
+- GST (18%) applied
 
-During the next launch, all previous data is restored
+---
 
+## Doctors Available
+
+| ID | Doctor Name | Specialization |
+|----|-------------|----------------|
+| 1 | Dr. Smith | Cardiology |
+| 2 | Dr. Johnson | Neurology |
+| 3 | Dr. Williams | Pediatrics |
+| 4 | Dr. Patel | Orthopedics |
+| 5 | Dr. Reddy | General Medicine |
+
+---
+
+## Triage Helper (AI-like Symptom Checker)
+
+Describe patient symptoms, and the system recommends:
+
+| Symptom Keyword | Department | Urgency |
+|----------------|------------|---------|
+| chest pain, heart | Cardiology | EMERGENCY |
+| breathless, cough | Pulmonology | URGENT / NORMAL |
+| fever | General Medicine | NORMAL |
+| headache | Neurology | NORMAL |
+| fracture | Orthopedics | URGENT |
+| burn | Plastic Surgery | EMERGENCY |
+| stomach | Gastroenterology | NORMAL |
+| eye | Ophthalmology | NORMAL |
+| child | Pediatrics | URGENT |
+| pregnant | Obstetrics | URGENT |
+
+---
+
+## Sample Use Cases
+
+- Hospital patient admission and discharge
+- Doctor appointment scheduling
+- Automated billing with tax calculation
+- Emergency symptom triage
+- OOP concepts demonstration project
+- File handling practice project
+
+---
+
+## Future Improvements
+
+- GUI version using Qt
+- Database integration (MySQL/SQLite)
+- Email/SMS appointment reminders
+- Pharmacy inventory management
+- Patient portal for online booking
+- Export reports to PDF/Excel
+
+---
+
+## License
+
+**Academic Project — Vardhaman College of Engineering (2025–26)**
 

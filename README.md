@@ -11,8 +11,8 @@ A Console Application powered by OOP in C++ | Hospital Management
 | Role | Name |
 |------|------|
 | **Mentor**    | [K.Shasheesh] |
-| **Team Lead** | [M>Varshitha] |
-| **Members**   | [R>Arun] |
+| **Team Lead** | [M.Varshitha] |
+| **Members**   | [R.Arun] |
 |               | [Rithvik] |
 |               | [Deepika] |
 

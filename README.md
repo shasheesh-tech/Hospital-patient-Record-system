@@ -91,7 +91,6 @@ Windows
 
 bash
 hospital_system.exe
-Note: Use PowerShell or Windows Terminal for best display. Command Prompt may not show box characters correctly.
 
 ## How the Application Works
 
@@ -108,12 +107,14 @@ Note: Use PowerShell or Windows Terminal for best display. Command Prompt may no
 ## Patient Types & Billing
 
 ### Inpatient
+
 - Requires ward number and bed number
 - Charges: ₹2000 per day (room) + ₹500 per day (doctor fee)
 - GST (18%) applied
 - Senior citizens (age 60+) get 10% discount
 
 ### Outpatient
+
 - Consultation only, no bed required
 - Flat fee: ₹500
 - GST (18%) applied
@@ -176,4 +177,5 @@ Describe patient symptoms, and the system recommends:
 ## License
 
 **Academic Project — Vardhaman College of Engineering (2025–26)**
+Note: Use PowerShell or Windows Terminal for best display. Command Prompt may not show box characters correctly.
 

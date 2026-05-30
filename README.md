@@ -1,4 +1,3 @@
-# Hospital-patient-Record-system
 # Hospital Patient Record System
 
 A Console Application powered by OOP in C++ | Hospital Management
@@ -11,9 +10,9 @@ A Console Application powered by OOP in C++ | Hospital Management
 
 | Role | Name |
 |------|------|
-| **Mentor**    | [K.shasheesh] |
-| **Team Lead** | [M.Varshitha] |
-| **Members**   | [R.arun] |
+| **Mentor**    | [K.Shasheesh] |
+| **Team Lead** | [M>Varshitha] |
+| **Members**   | [R>Arun] |
 |               | [Rithvik] |
 |               | [Deepika] |
 
@@ -34,18 +33,18 @@ The project demonstrates practical usage of **Inheritance**, **Polymorphism**, *
 
 | Feature | Description |
 |---------|-------------|
-| **Admit Patient** | Inpatient (with ward + bed) or Outpatient (consultation only) |
-| **Discharge Patient** | Auto-generates bill with room charges and doctor fees |
-| **View All Patients** | Displays complete list of all admitted patients |
-| **Search Patient** | By ID or by name (partial match supported) |
-| **Ward Census** | Shows only currently admitted inpatients with bed details |
-| **Book Appointment** | Schedule appointment with doctor by ID |
-| **Cancel Appointment** | Cancel existing appointment |
-| **View Appointments** | Shows all scheduled and cancelled appointments |
-| **View Patient Bill** | Calculates bill with GST (18%) and senior discount (10%) |
-| **Triage Helper** | AI-like symptom checker recommending department + urgency |
-| **Auto Save/Load** | Automatic file saving and loading across sessions |
-| **Doctor Assignment** | Assign patients to specialized doctors |
+| Admit Patient | Inpatient (with ward + bed) or Outpatient (consultation only) |
+| Discharge Patient | Auto-generates bill with room charges and doctor fees |
+| View All Patients | Displays complete list of all admitted patients |
+| Search Patient | By ID or by name (partial match supported) |
+| Ward Census | Shows only currently admitted inpatients with bed details |
+| Book Appointment | Schedule appointment with doctor by ID |
+| Cancel Appointment | Cancel existing appointment |
+| View Appointments | Shows all scheduled and cancelled appointments |
+| View Patient Bill | Calculates bill with GST (18%) and senior discount (10%) |
+| Triage Helper | AI-like symptom checker recommending department + urgency |
+| Auto Save/Load | Automatic file saving and loading across sessions |
+| Doctor Assignment | Assign patients to specialized doctors |
 
 ---
 
@@ -53,13 +52,13 @@ The project demonstrates practical usage of **Inheritance**, **Polymorphism**, *
 
 | Concept | Implementation |
 |---------|----------------|
-| **Encapsulation** | Private data members with public getters/setters |
-| **Inheritance** | Inpatient and Outpatient derived from Patient base class |
-| **Polymorphism** | Virtual calculateBill() and printRecord() functions |
-| **Abstraction** | Patient as abstract base class with pure virtual functions |
-| **Operator Overloading** | < and > operators for patient comparison |
-| **File Streams** | ifstream / ofstream for data persistence |
-| **STL Vectors** | Dynamic storage for patients, doctors, appointments |
+| Encapsulation | Private data members with public getters/setters |
+| Inheritance | Inpatient and Outpatient derived from Patient base class |
+| Polymorphism | Virtual calculateBill() and printRecord() functions |
+| Abstraction | Patient as abstract base class with pure virtual functions |
+| Operator Overloading | < and > operators for patient comparison |
+| File Streams | ifstream / ofstream for data persistence |
+| STL Vectors | Dynamic storage for patients, doctors, appointments |
 
 ---
 

@@ -93,6 +93,19 @@ bash
 hospital_system.exe
 Note: Use PowerShell or Windows Terminal for best display. Command Prompt may not show box characters correctly.
 
+##How the Application Works
+The application starts and automatically loads saved data from files
 
+User selects an operation from the main menu
+
+All operations are performed on in-memory vectors
+
+Patient records support both Inpatient (bed + ward) and Outpatient types
+
+Appointments are linked to patients and doctors
+
+Before exiting, all data is automatically saved to files
+
+During the next launch, all previous data is restored
 
 

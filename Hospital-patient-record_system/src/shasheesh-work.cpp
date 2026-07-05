@@ -1,52 +1,46 @@
-#ifndef PATIENT_H
-#define PATIENT_H
+#ifndef HOSPITALSYSTEM_H
+#define HOSPITALSYSTEM_H
 
-#include <iostream>
-#include <string>
-#include <fstream>
-using namespace std;
+#include <vector>
+#include "Patient.h"
+#include "Doctor.h"
+#include "Appointment.h"
 
-class Patient {
-protected:
-    int    id;
-    string name;
-    int    age;
-    string gender;
-    string admissionDate;
-    bool   admitted;
-    int    assignedDoctorId;
+// ============================================================
+//  MAIN HOSPITAL SYSTEM CLASS
+//  Contributed by: Shahesh (Mentor)
+//  Role: System Integration, File I/O, Main Menu
+// ============================================================
+
+class HospitalSystem {
+private:
+    vector<Patient*>    patients;
+    vector<Doctor>      doctors;
+    vector<Appointment> appointments;
+    int nextPatientId;
+    int nextDoctorId;
+    int nextAppointmentId;
+
+    void saveData();
+    void loadData();
+    Patient* findPatient(int id);
+    Doctor* findDoctor(int id);
 
 public:
-    Patient();
-    Patient(int i, string n, int a, string g, string date);
-    virtual ~Patient();
-
-    // Pure virtual functions - Polymorphism
-    virtual double calculateBill() const = 0;
-    virtual void   printRecord()   const = 0;
-    virtual string getPatientType() const = 0;
-
-    // Operator overloading
-    bool operator<(const Patient& o) const;
-    bool operator>(const Patient& o) const;
-
-    // Getters
-    int    getId()            const;
-    string getName()          const;
-    int    getAge()           const;
-    string getGender()        const;
-    string getAdmissionDate() const;
-    bool   isAdmitted()       const;
-    int    getDoctorId()      const;
-
-    // Setters
-    void assignDoctor(int docId);
-    void discharge();
-    void setAdmissionDate(string date);
-
-    // File I/O
-    virtual void save(ofstream& out) const;
-    virtual void load(ifstream& in);
+    HospitalSystem();
+    ~HospitalSystem();
+    
+    void admitPatient();
+    void dischargePatient();
+    void viewAllPatients();
+    void searchPatient();
+    void wardCensus();
+    void bookAppointment();
+    void cancelAppointment();
+    void viewAppointments();
+    void viewBill();
+    void triageHelper();
+    void mainMenu();
 };
 
 #endif

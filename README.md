@@ -14,18 +14,7 @@ Developed using **C++**, **Object-Oriented Programming**, **File Handling**, and
 </div>
 
 ---
-## Team
 
-| Role | Name |
-|------|------|
-| **Mentor**    | [K.shasheesh] 
-| **Team Lead** | [M.Varshitha] |
-| **Members**   | [R.Arun] |
-|               | [Rithvik] |
-|               | [Deepika] |
-
-
----
 
 ## 📖 Project Overview
 

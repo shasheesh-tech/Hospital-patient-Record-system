@@ -1,11 +1,19 @@
-# Hospital Patient Record System
+# 🏥 Hospital Patient Record Management System
 
-A Console Application powered by OOP in C++ | Hospital Management
+<div align="center">
 
-**Vardhaman College of Engineering — CSE Department — Summer Project 2025–26**
+### A Professional Console-Based Hospital Management System built using Object-Oriented Programming in C++
+
+**Summer Project 2025–26**
+
+Department of Computer Science & Engineering  
+Vardhaman College of Engineering
+
+Developed using **C++**, **Object-Oriented Programming**, **File Handling**, and **STL**
+
+</div>
 
 ---
-
 ## Team
 
 | Role | Name |
@@ -19,161 +27,284 @@ A Console Application powered by OOP in C++ | Hospital Management
 
 ---
 
-## What is this?
+## 📖 Project Overview
 
-A fully functional hospital management system that runs in the terminal.
+The **Hospital Patient Record Management System** is a comprehensive terminal-based application developed in **C++** that simulates the day-to-day operations of a hospital.
 
-All patient records, doctor assignments, and appointments are managed using Object-Oriented Programming principles implemented in C++.
+The system enables efficient management of patients, doctors, appointments, hospital admissions, billing, and medical records while demonstrating the practical implementation of major **Object-Oriented Programming (OOP)** concepts.
 
-The project demonstrates practical usage of **Inheritance**, **Polymorphism**, **File Handling**, and **STL Containers** through a real-world hospital administration application.
-
----
-
-## Features
-
-| Feature | Description |
-|---------|-------------|
-| **Admit Patient** | Inpatient (with ward + bed) or Outpatient (consultation only) |
-| **Discharge Patient** | Auto-generates bill with room charges and doctor fees |
-| **View All Patients** | Displays complete list of all admitted patients |
-| **Search Patient** | By ID or by name (partial match supported) |
-| **Ward Census** | Shows only currently admitted inpatients with bed details |
-| **Book Appointment** | Schedule appointment with doctor by ID |
-| **Cancel Appointment** | Cancel existing appointment |
-| **View Appointments** | Shows all scheduled and cancelled appointments |
-| **View Patient Bill** | Calculates bill with GST (18%) and senior discount (10%) |
-| **Triage Helper** | AI-like symptom checker recommending department + urgency |
-| **Auto Save/Load** | Automatic file saving and loading across sessions |
-| **Doctor Assignment** | Assign patients to specialized doctors |
+Instead of simply storing records, the application provides a structured workflow similar to a real hospital management system where doctors, patients, appointments, and billing are interconnected.
 
 ---
 
-## OOP Concepts Used
+# ✨ Key Features
+
+## 👨‍⚕️ Patient Management
+
+- Admit New Patient
+- Discharge Patient
+- Search Patient by ID
+- Search Patient by Name
+- View Complete Patient Records
+- View Ward-wise Patient Census
+
+---
+
+## 🩺 Doctor Management
+
+- Predefined Specialist Doctors
+- Assign Doctor to Patient
+- View Doctor Information
+- Department-wise Doctor Allocation
+
+---
+
+## 📅 Appointment Management
+
+- Book Appointment
+- Cancel Appointment
+- View Appointment History
+- Patient–Doctor Linking
+
+---
+
+## 💰 Billing System
+
+- Automatic Bill Generation
+- Room Charges
+- Doctor Consultation Charges
+- GST Calculation
+- Senior Citizen Discount
+
+---
+
+## 🤖 Smart Triage Helper
+
+An AI-inspired symptom recommendation system that suggests the appropriate hospital department based on patient symptoms.
+
+Example:
+
+| Symptoms | Recommended Department | Priority |
+|----------|-----------------------|----------|
+| Chest Pain | Cardiology | 🔴 Emergency |
+| Fracture | Orthopedics | 🟠 Urgent |
+| Fever | General Medicine | 🟢 Normal |
+| Headache | Neurology | 🟢 Normal |
+| Burn Injury | Plastic Surgery | 🔴 Emergency |
+
+---
+
+# 🎯 Objectives
+
+The primary objectives of this project are:
+
+- Demonstrate Object-Oriented Programming concepts
+- Simulate real hospital administration
+- Implement efficient record management
+- Practice File Handling in C++
+- Understand modular software design
+- Build a real-world console application
+
+---
+
+# 🧠 OOP Concepts Demonstrated
 
 | Concept | Implementation |
-|---------|----------------|
-| **Encapsulation** | Private data members with public getters/setters |
-| **Inheritance** | Inpatient and Outpatient derived from Patient base class |
-| **Polymorphism** | Virtual calculateBill() and printRecord() functions |
-| **Abstraction** | Patient as abstract base class with pure virtual functions |
-| **Operator Overloading** | < and > operators for patient comparison |
-| **File Streams** | ifstream / ofstream for data persistence |
-| **STL Vectors** | Dynamic storage for patients, doctors, appointments |
+|----------|---------------|
+| Encapsulation | Private data members with public member functions |
+| Inheritance | Inpatient & Outpatient classes derived from Patient |
+| Polymorphism | Virtual functions for Billing & Record Display |
+| Abstraction | Abstract Patient base class |
+| Operator Overloading | Patient comparison operators |
+| Composition | HospitalSystem manages Patients, Doctors & Appointments |
+| File Handling | Persistent storage using text files |
+| STL Containers | Dynamic data management using vectors |
 
 ---
 
-## File Structure
-hospital/
-├── hospital_system.cpp
-├── patients.txt
-├── doctors.txt
-├── appointments.txt
-└── README.md
+# ⚙️ Technologies Used
 
-text
-
----
-
-## How to Compile & Run
-
-### Requirements
-- C++ Compiler (GCC / MinGW / Code::Blocks / VS Code)
-
-### Compile
-```bash
-g++ hospital_system.cpp -o hospital_system
-Run
-Linux / Mac
-
-bash
-./hospital_system
-Windows
-
-bash
-hospital_system.exe
-Note: Use PowerShell or Windows Terminal for best display. Command Prompt may not show box characters correctly.
-
----
-## How the Application Works
-
-1. The application starts and automatically loads saved data from files
-2. User selects an operation from the main menu
-3. All operations are performed on in-memory vectors
-4. Patient records support both Inpatient (bed + ward) and Outpatient types
-5. Appointments are linked to patients and doctors
-6. Before exiting, all data is automatically saved to files
-7. During the next launch, all previous data is restored
+| Technology | Purpose |
+|------------|---------|
+| C++ | Core Programming Language |
+| OOP | Software Design |
+| STL | Data Storage |
+| File Handling | Permanent Data Storage |
+| VS Code | Development Environment |
+| Git & GitHub | Version Control |
 
 ---
 
-## Patient Types & Billing
+# 📂 Project Structure
+
+```text
+Hospital-Patient-Record-System/
+│
+├── include/
+│      Patient.h
+│      Doctor.h
+│      Appointment.h
+│      Hospital.h
+│
+├── src/
+│      Patient.cpp
+│      Doctor.cpp
+│      Appointment.cpp
+│      Hospital.cpp
+│      main.cpp
+│
+├── data/
+│      patients.txt
+│      doctors.txt
+│      appointments.txt
+│
+├── docs/
+│      screenshots/
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+---
+
+# 🏗️ Application Workflow
+
+```text
+                Start Program
+                      │
+                      ▼
+            Load Saved Hospital Data
+                      │
+                      ▼
+              Display Main Menu
+                      │
+      ┌───────────────┼────────────────┐
+      ▼               ▼                ▼
+ Patient Module   Doctor Module   Appointment Module
+      │               │                │
+      └───────────────┼────────────────┘
+                      ▼
+             Billing & Reports
+                      │
+                      ▼
+              Save All Data
+                      │
+                      ▼
+                  Exit Program
+```
+
+---
+
+# 📸 Application Preview
+
+### Main Menu
+
+> *(Add terminal screenshot here)*
+
+---
+
+### Patient Record
+
+> *(Add screenshot here)*
+
+---
+
+### Billing System
+
+> *(Add screenshot here)*
+
+---
+
+### Appointment Module
+
+> *(Add screenshot here)*
+
+---
+
+# 💾 Data Persistence
+
+The project automatically stores all hospital information using text files.
+
+- patients.txt
+- doctors.txt
+- appointments.txt
+
+Whenever the application starts, previous records are automatically restored.
+
+---
+
+# 🏥 Billing Rules
 
 ### Inpatient
-- Requires ward number and bed number
-- Charges: ₹2000 per day (room) + ₹500 per day (doctor fee)
-- GST (18%) applied
-- Senior citizens (age 60+) get 10% discount
+
+- ₹2000 per day Room Charge
+- ₹500 per day Doctor Fee
+- 18% GST
+- 10% Senior Citizen Discount (Age ≥ 60)
+
+---
 
 ### Outpatient
-- Consultation only, no bed required
-- Flat fee: ₹500
-- GST (18%) applied
+
+- Flat Consultation Fee
+- 18% GST
 
 ---
 
-## Doctors Available
+# 🚀 Future Improvements
 
-| ID | Doctor Name | Specialization |
-|----|-------------|----------------|
-| 1 | Dr. Smith | Cardiology |
-| 2 | Dr. Johnson | Neurology |
-| 3 | Dr. Williams | Pediatrics |
-| 4 | Dr. Patel | Orthopedics |
-| 5 | Dr. Reddy | General Medicine |
-
----
-
-## Triage Helper (AI-like Symptom Checker)
-
-Describe patient symptoms, and the system recommends:
-
-| Symptom Keyword | Department | Urgency |
-|----------------|------------|---------|
-| chest pain, heart | Cardiology | EMERGENCY |
-| breathless, cough | Pulmonology | URGENT / NORMAL |
-| fever | General Medicine | NORMAL |
-| headache | Neurology | NORMAL |
-| fracture | Orthopedics | URGENT |
-| burn | Plastic Surgery | EMERGENCY |
-| stomach | Gastroenterology | NORMAL |
-| eye | Ophthalmology | NORMAL |
-| child | Pediatrics | URGENT |
-| pregnant | Obstetrics | URGENT |
+- Login Authentication
+- Admin Dashboard
+- Pharmacy Management
+- Laboratory Management
+- Blood Bank Module
+- MySQL Database Integration
+- PDF Bill Generation
+- QR Code Patient ID
+- GUI Version using Qt
+- Online Appointment Portal
 
 ---
 
-## Sample Use Cases
+# 👨‍💻 Development Team
 
-- Hospital patient admission and discharge
-- Doctor appointment scheduling
-- Automated billing with tax calculation
-- Emergency symptom triage
-- OOP concepts demonstration project
-- File handling practice project
-
----
-
-## Future Improvements
-
-- GUI version using Qt
-- Database integration (MySQL/SQLite)
-- Email/SMS appointment reminders
-- Pharmacy inventory management
-- Patient portal for online booking
-- Export reports to PDF/Excel
+| Role | Name |
+|------|------|
+| Mentor | **K. Shasheesh** |
+| Team Lead | **M. Varshitha** |
+| Member | **R. Arun** |
+| Member | **Rithvik** |
+| Member | **Deepika** |
 
 ---
 
-## License
+# 🎓 Academic Information
 
-**Academic Project — Vardhaman College of Engineering (2025–26)**
+**Course:** Summer Project (2025–26)
+
+**Department:** Computer Science & Engineering
+
+**Institution:** Vardhaman College of Engineering
+
+---
+
+# 📜 License
+
+This project is developed **solely for academic and educational purposes** as part of the Summer Project 2025–26 at **Vardhaman College of Engineering**.
+
+---
+
+<div align="center">
+
+### ⭐ If you like this project, consider giving it a Star!
+
+Made with ❤️ using C++
+
+</div>
+
+---
+
+
+
+

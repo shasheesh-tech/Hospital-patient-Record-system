@@ -8,10 +8,17 @@
 using namespace std;
 
 //============================================================
-//                 Doctor Class
-// Purpose:
-// Stores doctor information and provides functions to
-// display, save, and load doctor records.
+//                Doctor Class
+//------------------------------------------------------------
+// Stores doctor information including:
+// • Doctor ID
+// • Doctor Name
+// • Specialization
+//
+// Also provides functions for:
+// • Displaying doctor details
+// • Saving doctor records
+// • Loading doctor records
 //============================================================
 
 class Doctor
@@ -25,19 +32,19 @@ public:
 
     // Constructors
     Doctor();
-    Doctor(int doctorId, string doctorName, string doctorSpecialization);
+    Doctor(int id, string name, string specialization);
 
     // Getter Functions
     int getId() const;
     string getName() const;
-    string getSpecialization() const;
+    string getSpec() const;
 
     // Display Function
-    void displayDoctor() const;
+    void display() const;
 
-    // File Handling Functions
-    void saveDoctor(ofstream &out) const;
-    void loadDoctor(ifstream &in);
+    // File Handling
+    void save(ofstream &out) const;
+    void load(ifstream &in);
 };
 
 #endif

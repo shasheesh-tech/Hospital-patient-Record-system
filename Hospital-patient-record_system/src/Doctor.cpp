@@ -1,4 +1,5 @@
 #include "../include/Doctor.h"
+#include <iomanip>
 
 //============================================================
 // Default Constructor
@@ -38,29 +39,29 @@ string Doctor::getName() const
     return name;
 }
 
-string Doctor::getSpecialization() const
+string Doctor::getSpec() const
 {
     return specialization;
 }
 
 //============================================================
-// Display Doctor Information
+// Display Doctor Details
 //============================================================
 
-void Doctor::displayDoctor() const
+void Doctor::display() const
 {
-    cout << "--------------------------------------------\n";
-    cout << "Doctor ID        : " << id << endl;
-    cout << "Doctor Name      : Dr. " << name << endl;
-    cout << "Specialization   : " << specialization << endl;
-    cout << "--------------------------------------------\n";
+    cout << left
+         << setw(5)  << id
+         << setw(20) << name
+         << setw(20) << specialization
+         << endl;
 }
 
 //============================================================
-// Save Doctor Information to File
+// Save Doctor Record
 //============================================================
 
-void Doctor::saveDoctor(ofstream &out) const
+void Doctor::save(ofstream &out) const
 {
     out << id << endl;
     out << name << endl;
@@ -68,10 +69,10 @@ void Doctor::saveDoctor(ofstream &out) const
 }
 
 //============================================================
-// Load Doctor Information from File
+// Load Doctor Record
 //============================================================
 
-void Doctor::loadDoctor(ifstream &in)
+void Doctor::load(ifstream &in)
 {
     in >> id;
     in.ignore();

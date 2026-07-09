@@ -1,82 +1,79 @@
 #include "../include/Doctor.h"
-#include <iomanip>
 
-//============================================================
-// Default Constructor
-//============================================================
+// ============================================================
+//  DOCTOR CLASS IMPLEMENTATION
+//  Contributed by: Rithvik
+// ============================================================
 
-Doctor::Doctor()
-{
+// ============================================================
+//  CONSTRUCTORS
+//  Purpose: Create doctor objects
+// ============================================================
+
+// Default constructor
+// Sets all values to default (empty)
+Doctor::Doctor() {
     id = 0;
     name = "";
     specialization = "";
 }
 
-//============================================================
-// Parameterized Constructor
-//============================================================
-
-Doctor::Doctor(int doctorId,
-               string doctorName,
-               string doctorSpecialization)
-{
-    id = doctorId;
-    name = doctorName;
-    specialization = doctorSpecialization;
+// Parameterized constructor
+// Sets values based on parameters passed
+Doctor::Doctor(int docId, string docName, string docSpecialization) {
+    id = docId;
+    name = docName;
+    specialization = docSpecialization;
 }
 
-//============================================================
-// Getter Functions
-//============================================================
+// ============================================================
+//  GETTER FUNCTIONS
+//  Purpose: Return private data to outside
+// ============================================================
 
-int Doctor::getId() const
-{
+// Returns doctor's ID
+int Doctor::getId() const {
     return id;
 }
 
-string Doctor::getName() const
-{
+// Returns doctor's name
+string Doctor::getName() const {
     return name;
 }
 
-string Doctor::getSpec() const
-{
+// Returns doctor's specialization
+string Doctor::getSpec() const {
     return specialization;
 }
 
-//============================================================
-// Display Doctor Details
-//============================================================
+// ============================================================
+//  DISPLAY FUNCTION
+//  Purpose: Print doctor details on console
+// ============================================================
 
-void Doctor::display() const
-{
-    cout << left
-         << setw(5)  << id
-         << setw(20) << name
-         << setw(20) << specialization
-         << endl;
+void Doctor::display() const {
+    cout << "  [" << id << "] Dr. " << name;
+    cout << " - " << specialization;
+    cout << "\n";
 }
 
-//============================================================
-// Save Doctor Record
-//============================================================
+// ============================================================
+//  FILE HANDLING FUNCTIONS
+//  Purpose: Save and load doctor data
+// ============================================================
 
-void Doctor::save(ofstream &out) const
-{
-    out << id << endl;
-    out << name << endl;
-    out << specialization << endl;
+// Writes doctor data to file
+void Doctor::save(ofstream& outFile) const {
+    outFile << id << "\n";
+    outFile << name << "\n";
+    outFile << specialization << "\n";
 }
 
-//============================================================
-// Load Doctor Record
-//============================================================
-
-void Doctor::load(ifstream &in)
-{
-    in >> id;
-    in.ignore();
-
-    getline(in, name);
-    getline(in, specialization);
+// Reads doctor data from file
+void Doctor::load(ifstream& inFile) {
+    inFile >> id;
+    inFile.ignore();  // Skip newline character
+    
+    getline(inFile, name);
+    getline(inFile, specialization);
 }

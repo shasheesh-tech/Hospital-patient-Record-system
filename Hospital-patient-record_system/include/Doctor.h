@@ -9,7 +9,7 @@ using namespace std;
 // ============================================================
 //  DOCTOR CLASS
 //  Purpose: Stores doctor information
-//  Contributed by: Rithvik
+//  Contributed by: Shasheesh
 // ============================================================
 
 class Doctor {

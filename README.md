@@ -190,25 +190,29 @@ Hospital-Patient-Record-System/
 
 ### Main Menu
 
-> *(Add terminal screenshot here)*
+> <img width="480" height="521" alt="Screenshot 2026-07-09 225431" src="https://github.com/user-attachments/assets/d1a983e8-1858-4b29-b150-eaef65f5100d" />
+
 
 ---
 
 ### Patient Record
 
-> *(Add screenshot here)*
+> <img width="885" height="512" alt="Screenshot 2026-07-09 230743" src="https://github.com/user-attachments/assets/1ba44c5c-e572-4c41-b719-3f5cf37f0ec6" />
+
 
 ---
 
 ### Billing System
 
-> *(Add screenshot here)*
+> <img width="336" height="362" alt="Screenshot 2026-07-09 231914" src="https://github.com/user-attachments/assets/f8ab9b76-da2f-4cd4-bc64-3597a0bdbe29" />
+
 
 ---
 
 ### Appointment Module
 
-> *(Add screenshot here)*
+> <img width="352" height="330" alt="Screenshot 2026-07-09 231419" src="https://github.com/user-attachments/assets/5d176c3e-9b51-43fe-9549-9c0071f91359" />
+
 
 ---
 

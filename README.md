@@ -26,6 +26,18 @@ The system enables efficient management of patients, doctors, appointments, hosp
 Instead of simply storing records, the application provides a structured workflow similar to a real hospital management system where doctors, patients, appointments, and billing are interconnected.
 
 ---
+# 👨‍💻 Development Team
+
+| Role | Name |
+|------|------|
+| Mentor | **K. Shasheesh** |
+| Team Lead | **M. Varshitha** |
+| Member | **R. Arun** |
+| Member | **Rithvik** |
+| Member | **Deepika** |
+
+---
+
 
 # ✨ Key Features
 
@@ -261,17 +273,6 @@ Whenever the application starts, previous records are automatically restored.
 
 ---
 
-# 👨‍💻 Development Team
-
-| Role | Name |
-|------|------|
-| Mentor | **K. Shasheesh** |
-| Team Lead | **M. Varshitha** |
-| Member | **R. Arun** |
-| Member | **Rithvik** |
-| Member | **Deepika** |
-
----
 
 # 🎓 Academic Information
 
